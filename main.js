@@ -2,10 +2,13 @@
 document.getElementById("btn").addEventListener("click", simulate);
 
 function simulate() {
-    let posNum = document.getElementById("posNum").value;
+    let posNum = +document.getElementById("posNum").value;
     
     if (posNum < 7 && posNum > 0) { 
-    } 
+        let randNum = Math.random();
+    } else if () {
+        
+    }
     
      if (posNum < 13 && posNum > 6) {
 
