@@ -1,0 +1,22 @@
+
+body {
+    text-align: center;
+    margin: auto;
+    /* background-image:url("Mario-Kart-Tour-796x417.jpg");
+    background-position: 700px */
+}
+
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px 10px;
+    padding: 8px 25px;
+    font-size: 25px;
+}
