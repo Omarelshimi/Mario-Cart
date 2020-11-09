@@ -5,9 +5,7 @@ function simulate() {
     let postNum = +document.getElementById("posNum").value;
     let randNum = Math.random();
 
-    // if (postNum != 1 ) {
-    //     document.getElementById("fix").innerHTML = "Not a number between 1 - 12!";
-    // }
+    document.getElementById("fix").innerHTML = "";
 
     if (postNum < 7 && postNum > 0) {
         if (randNum < .45) {
@@ -26,9 +24,7 @@ function simulate() {
             document.getElementById("BB").innerHTML++;
             document.getElementById("totC").innerHTML++;
         }
-    }
-
-    if (postNum < 13 && postNum > 6) {
+    } else if (postNum < 13 && postNum > 6) {
         if (randNum < .05) {
             document.getElementById("BAN").innerHTML++;
             document.getElementById("totC").innerHTML++;
@@ -45,5 +41,7 @@ function simulate() {
             document.getElementById("BB").innerHTML++;
             document.getElementById("totC").innerHTML++;
         }
-    } 
+    } else {
+        document.getElementById("fix").innerHTML = "Not a number between 1 - 12!";
+    }
 }
